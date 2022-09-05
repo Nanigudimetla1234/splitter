@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* logo */
+        span {
+            color: #fff;
+            font-family: "Rubik", sans-serif;
+            font-size: 2em;
+            line-height: 1em;
+            text-transform: uppercase;
+            display: inline-block;
+            opacity: 0;
+            transform: scale(0.2) rotate(-40deg);
+            text-shadow: 0 1px 0 hsl(0, 0%, 80%), 0 2px 0 hsl(0, 0%, 75%),
+                0 3px 0 hsl(0, 0%, 70%), 0 4px 0 hsl(0, 0%, 65%), 0 5px 0 hsl(0, 0%, 60%),
+                0 6px 0 hsl(0, 0%, 55%), 0 7px 1px hsla(0, 0%, 0%, 20%),
+                0 0 5px hsla(0, 0%, 0%, 10%), 0 1px 3px hsla(0, 0%, 0%, 30%),
+                0 3px 5px hsla(0, 0%, 0%, 20%), 0 5px 10px hsla(0, 0%, 0%, 25%),
+                0 10px 10px hsla(0, 0%, 0%, 20%), 0 25px 25px hsla(0, 0%, 0%, 15%);
+        }
+
+        .show {
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+            transition-timing-function: cubic-bezier(0.6, 0.56, 0.66, 1.54);
+            transition-duration: 1s;
+        }
+
+
+.main_cols{
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 0px;
+}
+.btn{
+  margin: 1rem;
+}
+.box{
+    width: 18rem;
+    height: 12rem;
+    /* border: 1px solid green; */
+    margin: 2rem;
+
+    background: rgba(255,255,255);
+    box-shadow: 0 35px 68px 0 rgb(170 63 254 / 42%), inset 0 -8px 10px 0 #d6a2ff;
+    padding-top: 10px;;
+}
+.plus{
+    font-size: 3rem;
+}
+.centerplus{ 
+  position: absolute;
+  /* bottom: 8vh; */
+  top:50vh;
+  right: 2vw;
+}
+.buttons a{
+font-size: 0.2rem;
+}
+
+/* sidenavbar */
+.sidenavbar{
+    background-color: #4b4376;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.tonavbar{
+    background-color: #000000;
+    color: gold;
+}
+.btnsize{
+    font-size: 0.7rem;
+}
+.btnsize2{
+        font-size: 0.9rem;
+
+}
+footer{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topnavbar{
+    justify-content:end;
+}
+ @media only screen and (max-width: 760px) {
+         .sidenavbar{
+             flex-direction: row;
+             justify-content: space-between;
+         }
+         #heading{
+            font-size: 0.8rem;
+         }
+         .tonavbar{
+                justify-content: start;
+                flex-wrap: wrap;
+         }
+         .tonavbar button{
+            margin: 0;
+            font-size: 0.8rem;
+         }
+         .centerplus{ 
+            position: fixed;
+            top:40vh;
+         right: 7vw;
+         }
+         .footer{
+            display: none;
+         }
+        }
